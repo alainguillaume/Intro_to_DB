@@ -1,5 +1,5 @@
 -- Connect to the MySQL server and database
-USE alx_book_store;
+CREATE DATABASE IF NOT EXISTS alx_book_store
 
 -- Create Authors table
 CREATE TABLE IF NOT EXISTS Authors (

@@ -1,8 +1,10 @@
 use alx_book_store;
 
-DESC Books;
-DESC alx_book_store;
-DESC Authors;
-DESC Customers;
-DESC Orders;
-DESC Order_Details;
+SELECT 
+    COLUMN_NAME, 
+    COLUMN_TYPE 
+FROM 
+    INFORMATION_SCHEMA.COLUMNS 
+WHERE 
+    TABLE_SCHEMA = 'alx_book_store' 
+    AND TABLE_NAME IN ('Books', 'Orders','alx_book_store','Authors','Customers','Order_Details');

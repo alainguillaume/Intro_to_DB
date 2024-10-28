@@ -7,4 +7,6 @@ FROM
     INFORMATION_SCHEMA.COLUMNS 
 WHERE 
     TABLE_SCHEMA = 'alx_book_store' 
-    AND TABLE_NAME IN ('Books', 'Orders','alx_book_store','Authors','Customers','Order_Details');
+    AND TABLE_NAME = 'Books'
+    
+--'Orders','alx_book_store','Authors','Customers','Order_Details');
